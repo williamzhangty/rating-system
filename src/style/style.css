@@ -1,0 +1,100 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.app {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Dialog Styles */
+.dialog-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-button:hover {
+  background-color: #0056b3;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 300px; /* Adjust as needed */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dialog-content img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+/* StarRating Styles */
+.rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px; /* Adjust this height as necessary */
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row; /* Ensure stars are displayed in a row */
+  justify-content: center; /* Center the stars */
+  margin-bottom: 10px; /* Add some margin below the stars */
+}
+
+.star {
+  font-size: 2rem;
+  color: gray;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.star.selected {
+  color: gold;
+}
+
+.star + .star {
+  margin-left: 0.5rem;
+}
+
+.rating-text {
+  height: 1em; /* Ensure there is space reserved for the text */
+}
